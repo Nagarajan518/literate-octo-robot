@@ -44,7 +44,6 @@ except URLError as e:
 # #normalize
 # fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # streamlit.dataframe(fruityvice_normalized)
-streamlit.stop()
 #
 streamlit.header("The Fruit load list contains:")
 #snowflake functions
@@ -76,3 +75,4 @@ if streamlit.button('Add a fruit to list'):
 # my_data_row = my_cur.fetchall()
 # streamlit.header("Fruit load list contans:")
 # streamlit.dataframe(my_data_row)
+streamlit.stop()
